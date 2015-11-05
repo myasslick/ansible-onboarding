@@ -1,0 +1,9 @@
+---
+
+- hosts: all
+  sudo: yes
+  vars:
+    package_name: git
+  tasks:
+    - name: Run apt-get update and install package
+      apt: name={{ package_name }} update_cache=yes

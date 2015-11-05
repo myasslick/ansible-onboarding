@@ -1,0 +1,6 @@
+# Total: {{ regions | length }}
+{% for region, output_format in regions.items() %}
+[default]
+region={{ region }}
+output={{ output_format }}
+{% endfor %}
